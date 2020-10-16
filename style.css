@@ -1,0 +1,67 @@
+/* Layout */
+.main {
+    display: flex;
+    /* padding: 2em; */
+    /* height: 90vh; */
+    justify-content: center;
+    align-items: middle;
+}
+
+/* .clockbox,#clock{
+    width: 100%;
+} */
+
+/* Clock styles */
+.circle {
+    fill: rgb(7, 58, 58);
+    stroke: rgb(241, 176, 102);
+    stroke-width: 7;
+    stroke-miterlimit: 10;
+
+    /* alternate colour:rgb(241, 176, 102) */
+}
+
+.mid-circle {
+    fill: rgb(245, 156, 171);
+}
+.hour-marks {
+    fill: none;
+    stroke: rgb(241, 217, 105);
+    stroke-width: 7;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke:rgb(245, 156, 171);
+    stroke-width: 13;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: rgb(245, 156, 171);
+    stroke-width: 8;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: rgb(245, 156, 171);
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
